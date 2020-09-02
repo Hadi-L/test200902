@@ -3,6 +3,15 @@ package Hadi.domain;
 public class Person {
     private String name;
     private Integer id;
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public Person() {
     }
@@ -33,6 +42,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
+                ", address='" + address + '\'' +
                 '}';
     }
 }
